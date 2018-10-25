@@ -1,1 +1,6 @@
 
+{ "weather" : [
+  { "duration": "int" }
+  { "temp": "string" }
+  { "water": "string" } 
+ ]}
