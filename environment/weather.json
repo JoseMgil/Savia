@@ -1,4 +1,3 @@
-
 { "weather" : [
   { "duration": "int" }
   { "temp": "string" }
