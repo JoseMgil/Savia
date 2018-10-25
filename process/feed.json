@@ -1,1 +1,4 @@
-
+{ "feed" : [
+  { "feed_process: "string" }
+   { "time_between: "int" }
+]}
