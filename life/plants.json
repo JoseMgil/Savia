@@ -1,1 +1,6 @@
 
+{"plants":[
+  { "feed_process": "string" }
+  { "life_time": "int" }
+  { "has_fruit": "boolean" }    
+]}
