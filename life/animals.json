@@ -1,1 +1,6 @@
 
+{"animals":[
+  { "feed_process": "string" }
+  { "life_time": "int" }
+  { "reproduccion_process": "string" }    
+]}
