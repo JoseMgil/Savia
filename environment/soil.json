@@ -1,5 +1,5 @@
 { "soil" : [
-  { "nutrients: "string" }
+  { "nutrients": "string" }
   { "water_abs": "int" }
   { "minerals": "string" }
 ]}
