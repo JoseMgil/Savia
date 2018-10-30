@@ -1,1 +1,5 @@
+{ "lifecycle" : [
+  { "max_days": "string" }
+  { "num_stages": "int" }
+]}
 
