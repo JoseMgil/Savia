@@ -24,7 +24,7 @@ class Game:
     # With this variable we set the FTP will have the loop
     TICK_RATE = 60
     
-    def __init__(seft, title, width, height): 
+    def __init__(self, title, width, height): 
         self.title = title
         self.width = width
         self.height = height
