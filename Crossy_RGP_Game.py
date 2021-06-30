@@ -50,7 +50,7 @@ class Game:
         while not is_game_over: 
 
             for event in pygame.event.get():
-                if event.type == pygame.QUIT 
+                if event.type == pygame.QUIT:
                     is_game_over = True
                 elif event.type == pygame.KEYDOWN: 
                     if event.key ==  pygame.K_UP: 
