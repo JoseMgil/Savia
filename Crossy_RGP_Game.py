@@ -90,9 +90,10 @@ class GameObject:
         self.height = height
 
     def draw(self, background): 
-        background.blit(self.image, (self.x_pos, self.y_pos)
+        background.blit(self.image, (self.x_pos, self.y_pos))
 
-class PlayerCharacter(GameObject): 
+                        
+class PlayerCharacter(GameObject):
 
     SPEED = 10
 
