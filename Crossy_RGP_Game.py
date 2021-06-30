@@ -55,7 +55,7 @@ class Game:
                 elif event.type == pygame.KEYDOWN: 
                     if event.key ==  pygame.K_UP: 
                         direction = 1
-                    else event.key == pygame.K_DOWN: 
+                    elif event.key == pygame.K_DOWN: 
                         direction = -1
                 elif event.type == pygame.KEYUP: 
                     if event.key == pygame.K_UP or event.key == pygame.K_DOWN: 
