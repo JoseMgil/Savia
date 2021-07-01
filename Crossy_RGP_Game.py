@@ -43,9 +43,10 @@ class Game:
         direction = 0
 
         # Remember: Position x and y are 0 from the left-top corner of the screen
-        player = PlayerCharacter('player.png', 375, 700, 50, 50)
-
-        enemy_0 = EnemyCharacter('enemy.png', 20, 400, 50, 50)
+        #player = PlayerCharacter("player.png", 375, 700, 50, 50)
+        player = PlayerCharacter("cupcake.jpg", 375, 700, 50, 50)
+        
+        enemy_0 = EnemyCharacter("ghost.png", 20, 400, 50, 50)
 
         while not is_game_over: 
 
@@ -65,7 +66,7 @@ class Game:
             # This fix the re-draw of the player character
             self.game_screen.fill(WHITE_COLOR)
 
-            player.move(direction)
+            player.move(direction, self.height)
             player.draw(self.game_screen)
             
             enemy_0.move(self.width)
@@ -83,8 +84,8 @@ class GameObject:
         object_image = pygame.image.load(image_path)
         self.image = pygame.transform.scale(object_image, (width, height))
 
-        self.x_pos
-        self.y_pos
+        self.x_pos = x
+        self.y_pos = y
 
         self.width = width
         self.height = height
@@ -97,11 +98,11 @@ class PlayerCharacter(GameObject):
 
     SPEED = 10
 
-    def __init__(self, image_path, x, y, width, height): 
-        super().__init__(self, image_path, x, y, width, height)
+    def __init__(self, image_path, x, y, width, height):
+        super().__init__(image_path, x, y, width, height)
 
     def move(self, direction, max_height):
-        if direcion > 0: 
+        if direction > 0: 
             self.y_pos -= self.SPEED
         elif direction < 0: 
             self.y_pos += self.SPEED
@@ -114,7 +115,7 @@ class EnemyCharacter(GameObject):
     SPEED = 10
 
     def __init__(self, image_path, x, y, width, height): 
-        super().__init__(self, image_path, x, y, width, height)  
+        super().__init__(image_path, x, y, width, height)  
 
     def move(self, max_width):
 
